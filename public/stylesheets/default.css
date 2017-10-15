@@ -1,0 +1,131 @@
+
+
+.layout {
+  position: absolute;
+  left: 20%;
+  top:2%;
+  background-color: #D7E3FF;
+  display: grid;
+  height: 100vh;
+  width: 690px;
+  grid-template-columns:
+      80px 160px 100px 60px 100px 160px 30px;
+  grid-template-rows:
+      100px 100px 130px 130px 130px 130px 160px;
+  grid-template-areas: 
+      "circ logo logo logo one one rpad"
+      "circ prop sqr1 midl one one rpad"
+      "circ prop sqr2 midl two thr rpad"
+      "circ prop sqr3 midl two thr rpad"
+      "circ prop sqr4 midl for for rpad"
+      "circ prop sqr5 midl sq7 sq8 rbox"
+      "circ prop sqr6 midl sq9 s10 rbox";
+}
+
+.circ {
+  background-color: #D7E3FF;
+  grid-area: circ;
+}
+
+/* content */
+.logo {
+  background-color: #00113C;
+  grid-area: logo;
+}
+
+.prop {
+  background-color: #D7E3FF;
+  grid-area: prop;
+}
+
+.midl {
+  background-color: #D7E3FF;
+  grid-area: midl;
+}
+
+.sqr1 {
+  background-color: #E05500;
+  grid-area: sqr1;
+}
+
+.sqr2 {
+  background-color: #E05500;
+  grid-area: sqr2;
+  margin: 30px 0px 0px 0px;
+}
+
+.sqr3 {
+  background-color: #E05500;
+  grid-area: sqr3;
+  margin: 30px 0px 0px 0px;
+}
+
+.sqr4 {
+  background-color: #E05500;
+  grid-area: sqr4;
+  margin: 30px 0px 0px 0px;
+}
+
+.sqr5 {
+  background-color: #E05500;
+  grid-area: sqr5;
+  margin: 30px 0px 0px 0px;
+}
+
+.sqr6 {
+  background-color: #E05500;
+  grid-area: sqr6;
+  margin: 30px 0px;
+}
+
+/* modules */
+.mone {
+  background-color: #000793;
+  grid-area: one;
+  margin: 30px 0px 30px 30px;
+}
+.mtwo {
+  background-color: #000793;
+  grid-area: two / midl-start / two / two;
+  margin: 0px 30px 60px 0px;
+}
+.mthr {
+  background-color: #000793;
+  grid-area: thr;
+  margin: 0px 30px 60px 0px;
+}
+.mfor {
+  background-color: #000793;
+  grid-area: for;
+}
+.sqr7 {
+  background-color: #E05500;
+  grid-area: sq7;
+  margin: 30px 0px 0px 0px;
+}
+.sqr8 {
+  background-color: #E05500;
+  grid-area: sq8;
+  margin: 30px 30px 0px 30px;
+}
+.sqr9 {
+  background-color: #E05500;
+  grid-area: sq9;
+  margin: 30px 0px;
+}
+.sq10 {
+  background-color: #E05500;
+  grid-area: s10;
+  margin: 30px;
+}
+
+.rpad {
+  background-color: #D7E3FF;
+  grid-area: rpad;
+}
+
+.rbox {
+  background-color: #FFC500;
+  grid-area: rbox;
+  margin: 30px 0px 0px 0px;
+}
